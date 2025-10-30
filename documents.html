@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,10 +10,13 @@
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Merriweather:wght@400;700&display=swap"
+        rel="stylesheet">
     <!-- Custom Css -->
-     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
@@ -49,8 +53,9 @@
     <section id="documents-page">
         <div class="container py-5">
             <h1 class="section-title mb-4">Historical Documents</h1>
-            <p class="mb-5">Browse our collection of historical documents related to the Liberation War, including treaties, declarations, and official correspondence.</p>
-            
+            <p class="mb-5">Browse our collection of historical documents related to the Liberation War, including
+                treaties, declarations, and official correspondence.</p>
+
             <div class="row mb-4">
                 <div class="col-md-6">
                     <div class="input-group mb-3">
@@ -61,7 +66,8 @@
                 <div class="col-md-6">
                     <div class="d-flex justify-content-md-end">
                         <div class="dropdown me-2">
-                            <button class="btn btn-outline-primary dropdown-toggle" type="button" data-bs-toggle="dropdown">
+                            <button class="btn btn-outline-primary dropdown-toggle" type="button"
+                                data-bs-toggle="dropdown">
                                 Sort by: Date
                             </button>
                             <ul class="dropdown-menu">
@@ -71,7 +77,8 @@
                             </ul>
                         </div>
                         <div class="dropdown">
-                            <button class="btn btn-outline-primary dropdown-toggle" type="button" data-bs-toggle="dropdown">
+                            <button class="btn btn-outline-primary dropdown-toggle" type="button"
+                                data-bs-toggle="dropdown">
                                 Filter by Type
                             </button>
                             <ul class="dropdown-menu">
@@ -85,16 +92,19 @@
                     </div>
                 </div>
             </div>
-            
+
             <div class="row">
                 <div class="col-lg-4 col-md-6 mb-4">
                     <div class="card document-card h-100">
                         <div class="card-body">
                             <span class="badge bg-primary mb-2">Declaration</span>
                             <h5 class="card-title">Declaration of Independence</h5>
-                            <p class="card-text">The proclamation of Bangladesh's independence by Sheikh Mujibur Rahman.</p>
+                            <p class="card-text">The proclamation of Bangladesh's independence by Sheikh Mujibur Rahman.
+                            </p>
                             <p class="text-muted small">Date: March 26, 1971</p>
-                            <a href="#" class="btn btn-sm btn-outline-primary">View Details</a>
+                            <!-- <a href="#" class="btn btn-sm btn-outline-primary">View Details</a> -->
+                            <button class="btn btn-sm btn-outline-primary" data-bs-toggle="modal"
+                                data-bs-target="#docModal">View Details</button>
                         </div>
                     </div>
                 </div>
@@ -103,9 +113,11 @@
                         <div class="card-body">
                             <span class="badge bg-warning text-dark mb-2">Treaty</span>
                             <h5 class="card-title">Instrument of Surrender</h5>
-                            <p class="card-text">The official document signed by Pakistani forces surrendering to the Joint Command.</p>
+                            <p class="card-text">The official document signed by Pakistani forces surrendering to the
+                                Joint Command.</p>
                             <p class="text-muted small">Date: December 16, 1971</p>
-                            <a href="#" class="btn btn-sm btn-outline-primary">View Details</a>
+                            <button class="btn btn-sm btn-outline-primary" data-bs-toggle="modal"
+                                data-bs-target="#docModal">View Details</button>
                         </div>
                     </div>
                 </div>
@@ -116,7 +128,8 @@
                             <h5 class="card-title">Constitution of Bangladesh</h5>
                             <p class="card-text">The original constitution of the People's Republic of Bangladesh.</p>
                             <p class="text-muted small">Date: November 4, 1972</p>
-                            <a href="#" class="btn btn-sm btn-outline-primary">View Details</a>
+                            <button class="btn btn-sm btn-outline-primary" data-bs-toggle="modal"
+                                data-bs-target="#docModal">View Details</button>
                         </div>
                     </div>
                 </div>
@@ -127,7 +140,8 @@
                             <h5 class="card-title">Letter to UN Secretary-General</h5>
                             <p class="card-text">Official communication from the Bangladesh government in exile.</p>
                             <p class="text-muted small">Date: April 10, 1971</p>
-                            <a href="#" class="btn btn-sm btn-outline-primary">View Details</a>
+                            <button class="btn btn-sm btn-outline-primary" data-bs-toggle="modal"
+                                data-bs-target="#docModal">View Details</button>
                         </div>
                     </div>
                 </div>
@@ -136,9 +150,11 @@
                         <div class="card-body">
                             <span class="badge bg-primary mb-2">Declaration</span>
                             <h5 class="card-title">Proclamation of Independence</h5>
-                            <p class="card-text">The official proclamation read on behalf of Bangabandhu Sheikh Mujibur Rahman.</p>
+                            <p class="card-text">The official proclamation read on behalf of Bangabandhu Sheikh Mujibur
+                                Rahman.</p>
                             <p class="text-muted small">Date: March 26, 1971</p>
-                            <a href="#" class="btn btn-sm btn-outline-primary">View Details</a>
+                            <button class="btn btn-sm btn-outline-primary" data-bs-toggle="modal"
+                                data-bs-target="#docModal">View Details</button>
                         </div>
                     </div>
                 </div>
@@ -147,14 +163,16 @@
                         <div class="card-body">
                             <span class="badge bg-warning text-dark mb-2">Treaty</span>
                             <h5 class="card-title">Indo-Bangladesh Treaty</h5>
-                            <p class="card-text">Friendship treaty between India and Bangladesh signed after the war.</p>
+                            <p class="card-text">Friendship treaty between India and Bangladesh signed after the war.
+                            </p>
                             <p class="text-muted small">Date: March 19, 1972</p>
-                            <a href="#" class="btn btn-sm btn-outline-primary">View Details</a>
+                            <button class="btn btn-sm btn-outline-primary" data-bs-toggle="modal"
+                                data-bs-target="#docModal">View Details</button>
                         </div>
                     </div>
                 </div>
             </div>
-            
+
             <nav aria-label="Page navigation">
                 <ul class="pagination justify-content-center">
                     <li class="page-item disabled">
@@ -211,10 +229,42 @@
         </div>
     </footer>
 
+    <!-- Image Modal -->
+    <div class="modal fade" id="docModal" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Proclamation of Independence</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body text-center">
+                    <iframe class="img-fluid" src="https://www.youtube.com/embed/JN7YDkSzM_U?si=0hZnf9S_nm2p2GBm"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <div class="mt-3">
+                        <p>Image description and details would appear here with historical context and information about
+                            the photograph.</p>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt soluta amet ipsa delectus
+                            dicta iusto quia, voluptates, labore corporis voluptatem enim. Aut eius incidunt repellendus
+                            in deleniti numquam labore doloribus quibusdam ex molestiae voluptas voluptate officia dolor
+                            quidem, fugiat, temporibus exercitationem amet corporis voluptatum doloremque, dolorem natus
+                            autem? Repudiandae rerum vero consequuntur ipsum ab libero veniam cum nihil, magni, ipsa
+                            maiores rem quasi. Officiis veritatis officia ad hic rem, quaerat omnis laboriosam natus
+                            reiciendis, exercitationem, modi perferendis deserunt blanditiis asperiores voluptates rerum
+                            inventore deleniti cupiditate repudiandae nemo totam ullam sequi? Soluta odio voluptas,
+                            repellat sequi iste similique inventore alias totam?</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
-    
+
     <script src="js/script.js"></script>
 </body>
+
 </html>
